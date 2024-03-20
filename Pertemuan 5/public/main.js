@@ -100,10 +100,11 @@ function Animasi() {
   if (kotakPosisi.y > 0.9) {
     kotakPosisi.y = 0.9;
     kecepatanVertikal = 0;
-  } else if (kotakPosisi.y < -0.9) {
-    kotakPosisi.y = -0.9;
+  } else if (kotakPosisi.y < 0.0) {
+    kotakPosisi.y = 0.0;
     kecepatanVertikal = 0;
   }
+
 
   GambarKotak();
   gl.drawArrays(gl.TRIANGLES, 0, 6); // Menggunakan TRIANGLES untuk menggambar kotak
